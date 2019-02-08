@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              android:gravity="center"
+              tools:context="com.example.a16pablovc.almacenar_permanente.MainActivity">
+<TextView
+    android:text="Elige color de texto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/brojo"
+            android:text="Rojo"
+            android:checked="true"
+            android:onClick="on_rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bazul"
+            android:text="azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv"
+        android:text="Texto cambia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+            android:onClick="on_casa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+</LinearLayout>
